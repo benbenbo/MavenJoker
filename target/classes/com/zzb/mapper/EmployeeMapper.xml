@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzb.mapper.EmployeeMapper">
+    <!--<cache eviction="FIFO" flushInterval="600000" readOnly="false" size="1024"></cache>-->
+    <cache type="org.mybatis.caches.ehcache.EhcacheCache"></cache>
+    <select id="getEmployeesMap" resultType="com.zzb.bo.Employee">
+        select id,last_name,gender,email from tbl_employee
+    </select>
+    <select id="getEmployeesByReturnMap" resultType="map">
+        select id,last_name,gender,email from tbl_employee where id=#{id}
+    </select>
+    <select id="getEmployeesByMap" resultType="com.zzb.bo.Employee">
+        select id,last_name,gender,email from tbl_employee where last_name like #{lastName}
+    </select>
+    <select id="getEmployeeByMap" resultType="com.zzb.bo.Employee">
+        select id,last_name,gender,email from tbl_employee where id=${id} and last_name=#{lastName}
+    </select>
+    <select id="getEmployeeByIdAndLastName" resultType="com.zzb.bo.Employee">
+        select id,last_name,gender,email from tbl_employee where id=#{id} and last_name=#{lastName}
+    </select>
+    <select id="getEmployeeById" resultType="com.zzb.bo.Employee">
+        select id,last_name,gender,email from tbl_employee where id=#{id}
+    </select>
+    <insert id="insertEmployee" parameterType="com.zzb.bo.Employee" useGeneratedKeys="true" keyProperty="id">
+        insert into tbl_employee(last_name,gender,email)values(#{lastName},#{gender},#{email})
+    </insert>
+    <update id="updateEmployeeById" parameterType="com.zzb.bo.Employee">
+        update tbl_employee set last_name=#{lastName},gender=#{gender},email=#{email} where id=#{id}
+    </update>
+    <delete id="deleteEmployee" parameterType="integer">
+        delete from tbl_employee where id=#{id}
+    </delete>
+    <select id="getEmployeeByDeptId" resultType="com.zzb.bo.Employee">
+        select id,last_name,gender,email,dept_id from tbl_employee where dept_id = #{deptId}
+    </select>
+    <!--动态SQL-->
+
+</mapper>
