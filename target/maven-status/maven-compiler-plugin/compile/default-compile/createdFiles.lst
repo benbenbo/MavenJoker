@@ -1,6 +1,0 @@
-com\zzb\MainApp.class
-com\zzb\service\impl\UserServiceImpl.class
-com\zzb\service\UserService.class
-com\zzb\bo\SimpleDemo.class
-com\zzb\bo\Student.class
-com\zzb\configuration\HelloConfiguration.class
