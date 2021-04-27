@@ -362,14 +362,12 @@ public class RBTree<T extends Comparable<T>> {
                 if(dataRoot.getRight()!=null){
                     //右节点不为null
                     RBTreeNode<T> min = removeMin(dataRoot.getRight());
-                    //x used for fix color balance
+                    //x用于修复颜色平衡
                     RBTreeNode<T> x = min.getRight()==null ? min.getParent() : min.getRight();
                     boolean isParent = min.getRight()==null;
-                    //min一定是没有左子树的，因为removeMin里已经判断了。
-                    //把待删除结点的左子树给到min的左子树的位置
+                    //这里是将返回的min节点代替dataRoot节点，dataRoot节点就是被删除的节点
                     min.setLeft(dataRoot.getLeft());
                     setParent(dataRoot.getLeft(),min);
-                    //设置待删除结点的父节点的指针
                     if(parent.getLeft()==dataRoot){
                         parent.setLeft(min);
                     }else{
@@ -380,13 +378,13 @@ public class RBTree<T extends Comparable<T>> {
                     boolean curMinIsBlack = min.isBlack();
                     //min结点继承待删除结点的颜色
                     min.setRed(dataRoot.isRed());
-                    //如果min不是待删除节点的右节点
-                    //则把待删除结点的右子树设置到min的右子树当中
+                    //如果min不是待删除节点的右节点，则把待删除结点的右子树设置到min的右子树当中，避免死循环
                     if(min!=dataRoot.getRight()){
                         min.setRight(dataRoot.getRight());
                         setParent(dataRoot.getRight(),min);
                     }
-                    //remove a black node,need fix color
+                    //移除的是黑色节点，需要修复操作
+                    //这里之所以判断min节点原来的颜色是因为min会继承dataRoot的颜色，真正被删掉的时候min节点
                     if(curMinIsBlack){
                         if(min!=dataRoot.getRight()){
                             fixRemove(x,isParent);
@@ -397,17 +395,17 @@ public class RBTree<T extends Comparable<T>> {
                         }
                     }
                 }else{
-                    //右节点为null的情况
-                    //将待删除结点的左子树给待删除结点的parent
-                    //因为待删除结点的右子树为空，所以不用管
+                    //右节点为null的情况，直接把待删除结点的左子树给待删除结点的parent，因为待删除结点的右子树为空，所以不用管
                     setParent(dataRoot.getLeft(),parent);
                     if(parent.getLeft()==dataRoot){
                         parent.setLeft(dataRoot.getLeft());
                     }else{
                         parent.setRight(dataRoot.getLeft());
                     }
+
+                    //此时真正删的是dataRoot，所以判断dataRoot的颜色
                     //如果当前删除的结点是黑色的，而且树是非空的，那么就需要调整
-                    if(dataRoot.isBlack() && !(root.getLeft()==null)){
+                    if(dataRoot.isBlack() && root.getLeft()!=null){
                         RBTreeNode<T> x = dataRoot.getLeft()==null
                                 ? parent :dataRoot.getLeft();
                         //isParent是判断是否是叶子结点，为true就是叶子结点
