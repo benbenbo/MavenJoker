@@ -1,0 +1,240 @@
+Index: target/classes/com/zzb/test/text.txt
+===================================================================
+diff --git a/target/classes/com/zzb/test/text.txt b/target/classes/com/zzb/test/text.txt
+deleted file mode 100644
+--- a/target/classes/com/zzb/test/text.txt	(revision 58bf2c24de06446587e43b37c3fc7cd57b923434)
++++ /dev/null	(revision 58bf2c24de06446587e43b37c3fc7cd57b923434)
+@@ -1,216 +0,0 @@
+-Classfile /E:/eclipse-workspace/MavenJoker/target/classes/com/zzb/test/MethodInnerTest.class
+-  Last modified 2021-3-5; size 1503 bytes
+-  MD5 checksum 64370158003c19de37238787941a4dd8
+-  Compiled from "MethodInnerTest.java"
+-public class com.zzb.test.MethodInnerTest extends java.lang.Object implements java.lang.Comparable<java.lang.Object>, java.io.Serializable
+-  minor version: 0
+-  major version: 52
+-  flags: ACC_PUBLIC, ACC_SUPER
+-Constant pool:
+-   #1 = Methodref          #16.#50        // java/lang/Object."<init>":()V
+-   #2 = Fieldref           #15.#51        // com/zzb/test/MethodInnerTest.num:I
+-   #3 = Fieldref           #52.#53        // java/lang/System.out:Ljava/io/PrintStream;
+-   #4 = Class              #54            // java/lang/StringBuilder
+-   #5 = Methodref          #4.#50         // java/lang/StringBuilder."<init>":()V
+-   #6 = String             #55            // count=
+-   #7 = Methodref          #4.#56         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+-   #8 = Methodref          #4.#57         // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+-   #9 = Methodref          #4.#58         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+-  #10 = Methodref          #59.#60        // java/io/PrintStream.println:(Ljava/lang/String;)V
+-  #11 = Class              #61            // java/lang/Exception
+-  #12 = Methodref          #11.#62        // java/lang/Exception.printStackTrace:()V
+-  #13 = String             #63            // ���Է��������ڲ��ṹ
+-  #14 = Fieldref           #15.#64        // com/zzb/test/MethodInnerTest.str:Ljava/lang/String;
+-  #15 = Class              #65            // com/zzb/test/MethodInnerTest
+-  #16 = Class              #66            // java/lang/Object
+-  #17 = Class              #67            // java/lang/Comparable
+-  #18 = Class              #68            // java/io/Serializable
+-  #19 = Utf8               num
+-  #20 = Utf8               I
+-  #21 = Utf8               str
+-  #22 = Utf8               Ljava/lang/String;
+-  #23 = Utf8               <init>
+-  #24 = Utf8               ()V
+-  #25 = Utf8               Code
+-  #26 = Utf8               LineNumberTable
+-  #27 = Utf8               LocalVariableTable
+-  #28 = Utf8               this
+-  #29 = Utf8               Lcom/zzb/test/MethodInnerTest;
+-  #30 = Utf8               compareTo
+-  #31 = Utf8               (Ljava/lang/Object;)I
+-  #32 = Utf8               o
+-  #33 = Utf8               Ljava/lang/Object;
+-  #34 = Utf8               test
+-  #35 = Utf8               count
+-  #36 = Utf8               test2
+-  #37 = Utf8               (I)I
+-  #38 = Utf8               value
+-  #39 = Utf8               e
+-  #40 = Utf8               Ljava/lang/Exception;
+-  #41 = Utf8               cal
+-  #42 = Utf8               result
+-  #43 = Utf8               StackMapTable
+-  #44 = Class              #61            // java/lang/Exception
+-  #45 = Utf8               <clinit>
+-  #46 = Utf8               Signature
+-  #47 = Utf8               Ljava/lang/Object;Ljava/lang/Comparable<Ljava/lang/Object;>;Ljava/io/Serializable;
+-  #48 = Utf8               SourceFile
+-  #49 = Utf8               MethodInnerTest.java
+-  #50 = NameAndType        #23:#24        // "<init>":()V
+-  #51 = NameAndType        #19:#20        // num:I
+-  #52 = Class              #69            // java/lang/System
+-  #53 = NameAndType        #70:#71        // out:Ljava/io/PrintStream;
+-  #54 = Utf8               java/lang/StringBuilder
+-  #55 = Utf8               count=
+-  #56 = NameAndType        #72:#73        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+-  #57 = NameAndType        #72:#74        // append:(I)Ljava/lang/StringBuilder;
+-  #58 = NameAndType        #75:#76        // toString:()Ljava/lang/String;
+-  #59 = Class              #77            // java/io/PrintStream
+-  #60 = NameAndType        #78:#79        // println:(Ljava/lang/String;)V
+-  #61 = Utf8               java/lang/Exception
+-  #62 = NameAndType        #80:#24        // printStackTrace:()V
+-  #63 = Utf8               ���Է��������ڲ��ṹ
+-  #64 = NameAndType        #21:#22        // str:Ljava/lang/String;
+-  #65 = Utf8               com/zzb/test/MethodInnerTest
+-  #66 = Utf8               java/lang/Object
+-  #67 = Utf8               java/lang/Comparable
+-  #68 = Utf8               java/io/Serializable
+-  #69 = Utf8               java/lang/System
+-  #70 = Utf8               out
+-  #71 = Utf8               Ljava/io/PrintStream;
+-  #72 = Utf8               append
+-  #73 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+-  #74 = Utf8               (I)Ljava/lang/StringBuilder;
+-  #75 = Utf8               toString
+-  #76 = Utf8               ()Ljava/lang/String;
+-  #77 = Utf8               java/io/PrintStream
+-  #78 = Utf8               println
+-  #79 = Utf8               (Ljava/lang/String;)V
+-  #80 = Utf8               printStackTrace
+-{
+-//显示域成员信息
+-  public int num;
+-    descriptor: I
+-    flags: ACC_PUBLIC
+-
+-  private static java.lang.String str;
+-    descriptor: Ljava/lang/String;
+-    flags: ACC_PRIVATE, ACC_STATIC
+-
+-    //方法信息
+-  public com.zzb.test.MethodInnerTest();
+-    descriptor: ()V
+-    flags: ACC_PUBLIC
+-    Code:
+-      stack=2, locals=1, args_size=1
+-         0: aload_0
+-         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+-         4: aload_0
+-         5: bipush        10
+-         7: putfield      #2                  // Field num:I
+-        10: return
+-      LineNumberTable:
+-        line 5: 0
+-        line 6: 4
+-      LocalVariableTable:
+-        Start  Length  Slot  Name   Signature
+-            0      11     0  this   Lcom/zzb/test/MethodInnerTest;
+-
+-  public int compareTo(java.lang.Object);
+-    descriptor: (Ljava/lang/Object;)I
+-    flags: ACC_PUBLIC
+-    Code:
+-      stack=1, locals=2, args_size=2
+-         0: iconst_0
+-         1: ireturn
+-      LineNumberTable:
+-        line 10: 0
+-      LocalVariableTable:
+-        Start  Length  Slot  Name   Signature
+-            0       2     0  this   Lcom/zzb/test/MethodInnerTest;
+-            0       2     1     o   Ljava/lang/Object;
+-
+-//方法信息
+-  public void test();
+-    descriptor: ()V
+-    flags: ACC_PUBLIC
+-    Code:
+-      stack=3, locals=2, args_size=1
+-         0: bipush        20
+-         2: istore_1
+-         3: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;
+-         6: new           #4                  // class java/lang/StringBuilder
+-         9: dup
+-        10: invokespecial #5                  // Method java/lang/StringBuilder."<init>":()V
+-        13: ldc           #6                  // String count=
+-        15: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+-        18: iload_1
+-        19: invokevirtual #8                  // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+-        22: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+-        25: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+-        28: return
+-      LineNumberTable:
+-        line 15: 0
+-        line 16: 3
+-        line 17: 28
+-      LocalVariableTable:
+-        Start  Length  Slot  Name   Signature
+-            0      29     0  this   Lcom/zzb/test/MethodInnerTest;
+-            3      26     1 count   I
+-
+-  public static int test2(int);
+-    descriptor: (I)I
+-    flags: ACC_PUBLIC, ACC_STATIC
+-    Code:
+-      stack=2, locals=3, args_size=1
+-         0: iconst_0
+-         1: istore_1
+-         2: bipush        30
+-         4: istore_2
+-         5: iload_2
+-         6: iload_0
+-         7: idiv
+-         8: istore_1
+-         9: goto          17
+-        12: astore_2
+-        13: aload_2
+-        14: invokevirtual #12                 // Method java/lang/Exception.printStackTrace:()V
+-        17: iload_1
+-        18: ireturn
+-      Exception table:
+-         from    to  target type
+-             2     9    12   Class java/lang/Exception
+-      LineNumberTable:
+-        line 19: 0
+-        line 21: 2
+-        line 22: 5
+-        line 25: 9
+-        line 23: 12
+-        line 24: 13
+-        line 26: 17
+-      LocalVariableTable:
+-        Start  Length  Slot  Name   Signature
+-            5       4     2 value   I
+-           13       4     2     e   Ljava/lang/Exception;
+-            0      19     0   cal   I
+-            2      17     1 result   I
+-      StackMapTable: number_of_entries = 2
+-        frame_type = 255 /* full_frame */
+-          offset_delta = 12
+-          locals = [ int, int ]
+-          stack = [ class java/lang/Exception ]
+-        frame_type = 4 /* same */
+-
+-  static {};
+-    descriptor: ()V
+-    flags: ACC_STATIC
+-    Code:
+-      stack=1, locals=0, args_size=0
+-         0: ldc           #13                 // String ���Է��������ڲ��ṹ
+-         2: putstatic     #14                 // Field str:Ljava/lang/String;
+-         5: return
+-      LineNumberTable:
+-        line 7: 0
+-}
+-Signature: #47                          // Ljava/lang/Object;Ljava/lang/Comparable<Ljava/lang/Object;>;Ljava/io/Serializable;
+-SourceFile: "MethodInnerTest.java"
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1617592565632)
++++ b/.idea/vcs.xml	(date 1617592565632)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file

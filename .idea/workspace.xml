@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0d39f66a-e9f9-4a31-9434-21226445d765" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/test/RBTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/test/RBTree.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Logback Configuration File" />
+        <option value="Mybatis Config" />
+        <option value="Mybatis Mapper" />
+        <option value="ehcache" />
+        <option value="Enum" />
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="E:\JAVA\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hQvx63wWNyBsOqqhTHYgSS7L1x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\eclipse-workspace\MavenJoker" />
+      <recent name="E:\eclipse-workspace\MavenJoker\src\main\java\com\zzb\mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\eclipse-workspace\MavenJoker\src\main\resources\com\zzb\mapper" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.zzb.mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RBTree">
+    <configuration name="AVLTreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zzb.test.AVLTreeTest" />
+      <module name="MavenJoker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zzb.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryTreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zzb.test.BinaryTreeTest" />
+      <module name="MavenJoker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zzb.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApp" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.zzb.MainApp" />
+      <module name="MavenJoker" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MethodAreaDeml" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.zzb.test.MethodAreaDeml" />
+      <module name="MavenJoker" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OOMTest" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.zzb.test.OOMTest" />
+      <module name="MavenJoker" />
+      <option name="VM_PARAMETERS" value="-XX:MetaspaceSize=10m -XX:MaxMetaspaceSize=10m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RBTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zzb.test.RBTree" />
+      <module name="MavenJoker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zzb.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedBlackTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zzb.test.RedBlackTest" />
+      <module name="MavenJoker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zzb.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaticFieldTest" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.zzb.test.StaticFieldTest" />
+      <module name="MavenJoker" />
+      <option name="VM_PARAMETERS" value="-Xms60m -Xmx60m -XX:MetaspaceSize=70m -XX:MaxMetaspaceSize=70m -XX:+PrintGCDetails" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UDPSocketTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zzb.test.UDPSocketTest" />
+      <module name="MavenJoker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zzb.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MainApp" />
+      <item itemvalue="Application.MethodAreaDeml" />
+      <item itemvalue="Application.OOMTest" />
+      <item itemvalue="Application.StaticFieldTest" />
+      <item itemvalue="Application.UDPSocketTest" />
+      <item itemvalue="Application.RedBlackTest" />
+      <item itemvalue="Application.BinaryTreeTest" />
+      <item itemvalue="Application.AVLTreeTest" />
+      <item itemvalue="Application.RBTree" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RBTree" />
+        <item itemvalue="Application.AVLTreeTest" />
+        <item itemvalue="Application.BinaryTreeTest" />
+        <item itemvalue="Application.RedBlackTest" />
+        <item itemvalue="Application.UDPSocketTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d39f66a-e9f9-4a31-9434-21226445d765" name="Default Changelist" comment="" />
+      <created>1599956373080</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599956373080</updated>
+      <workItem from="1599956376481" duration="1498000" />
+      <workItem from="1600477356415" duration="14857000" />
+      <workItem from="1600561400451" duration="4618000" />
+      <workItem from="1600601657729" duration="2402000" />
+      <workItem from="1600789116077" duration="865000" />
+      <workItem from="1600870492165" duration="2088000" />
+      <workItem from="1600956278050" duration="2047000" />
+      <workItem from="1601044098414" duration="4594000" />
+      <workItem from="1601078982215" duration="14277000" />
+      <workItem from="1601296394153" duration="817000" />
+      <workItem from="1601381661750" duration="7674000" />
+      <workItem from="1601478304669" duration="1351000" />
+      <workItem from="1601518318830" duration="1853000" />
+      <workItem from="1601541836499" duration="5752000" />
+      <workItem from="1601610830935" duration="4103000" />
+      <workItem from="1601709475460" duration="9989000" />
+      <workItem from="1601775974190" duration="11229000" />
+      <workItem from="1601864813580" duration="9972000" />
+      <workItem from="1602027252151" duration="18971000" />
+      <workItem from="1602069075637" duration="851000" />
+      <workItem from="1602255019772" duration="2752000" />
+      <workItem from="1602333250884" duration="2056000" />
+      <workItem from="1602380730879" duration="120000" />
+      <workItem from="1602684515937" duration="4315000" />
+      <workItem from="1602770540572" duration="3964000" />
+      <workItem from="1602852567280" duration="3382000" />
+      <workItem from="1602937261471" duration="1778000" />
+      <workItem from="1602979400887" duration="9079000" />
+      <workItem from="1603118452935" duration="2344000" />
+      <workItem from="1603370089625" duration="155000" />
+      <workItem from="1603370250132" duration="3670000" />
+      <workItem from="1603452576596" duration="6250000" />
+      <workItem from="1603540043820" duration="599000" />
+      <workItem from="1603616272764" duration="4633000" />
+      <workItem from="1603809210752" duration="3245000" />
+      <workItem from="1603893245292" duration="5337000" />
+      <workItem from="1603972231736" duration="6727000" />
+      <workItem from="1604109574092" duration="9619000" />
+      <workItem from="1604196160906" duration="3726000" />
+      <workItem from="1604415029049" duration="1512000" />
+      <workItem from="1604500613422" duration="1114000" />
+      <workItem from="1604577547935" duration="1197000" />
+      <workItem from="1604662277599" duration="786000" />
+      <workItem from="1605018867896" duration="1583000" />
+      <workItem from="1605185551404" duration="20000" />
+      <workItem from="1606613261008" duration="1087000" />
+      <workItem from="1606832164898" duration="3317000" />
+      <workItem from="1606918089761" duration="4110000" />
+      <workItem from="1606995172366" duration="5329000" />
+      <workItem from="1607085003057" duration="3244000" />
+      <workItem from="1607181901549" duration="2018000" />
+      <workItem from="1607215747318" duration="1700000" />
+      <workItem from="1607525861290" duration="968000" />
+      <workItem from="1607609684850" duration="4347000" />
+      <workItem from="1607733831025" duration="1835000" />
+      <workItem from="1607756599151" duration="121000" />
+      <workItem from="1607868301221" duration="1208000" />
+      <workItem from="1608042223986" duration="2082000" />
+      <workItem from="1608129304378" duration="3539000" />
+      <workItem from="1608214084165" duration="1199000" />
+      <workItem from="1608292404238" duration="3618000" />
+      <workItem from="1608357800894" duration="891000" />
+      <workItem from="1608427978683" duration="1222000" />
+      <workItem from="1608905945031" duration="599000" />
+      <workItem from="1608947757554" duration="25084000" />
+      <workItem from="1609076411619" duration="1833000" />
+      <workItem from="1609165867701" duration="1385000" />
+      <workItem from="1609244523727" duration="3194000" />
+      <workItem from="1609424304212" duration="2477000" />
+      <workItem from="1609476484309" duration="11443000" />
+      <workItem from="1609547318164" duration="1050000" />
+      <workItem from="1610246060602" duration="9073000" />
+      <workItem from="1610377006624" duration="1196000" />
+      <workItem from="1610461373742" duration="1720000" />
+      <workItem from="1610546433558" duration="5483000" />
+      <workItem from="1610623973646" duration="11382000" />
+      <workItem from="1610715540910" duration="6051000" />
+      <workItem from="1610795252458" duration="1862000" />
+      <workItem from="1611238750963" duration="2113000" />
+      <workItem from="1611367445522" duration="15752000" />
+      <workItem from="1611453749684" duration="16512000" />
+      <workItem from="1611494487895" duration="140000" />
+      <workItem from="1611494745334" duration="4826000" />
+      <workItem from="1611584593797" duration="979000" />
+      <workItem from="1611670472285" duration="601000" />
+      <workItem from="1611756154625" duration="1279000" />
+      <workItem from="1611833665734" duration="5389000" />
+      <workItem from="1611920636472" duration="7992000" />
+      <workItem from="1611969066326" duration="12419000" />
+      <workItem from="1612057962768" duration="1203000" />
+      <workItem from="1612178718136" duration="1047000" />
+      <workItem from="1612271420212" duration="1014000" />
+      <workItem from="1612361357400" duration="1198000" />
+      <workItem from="1612449265125" duration="856000" />
+      <workItem from="1612486070842" duration="771000" />
+      <workItem from="1612587750377" duration="1201000" />
+      <workItem from="1612656495342" duration="6336000" />
+      <workItem from="1612708883359" duration="1599000" />
+      <workItem from="1612754363305" duration="5937000" />
+      <workItem from="1612831956919" duration="246000" />
+      <workItem from="1612935206435" duration="1011000" />
+      <workItem from="1612937977510" duration="6363000" />
+      <workItem from="1613886110900" duration="114000" />
+      <workItem from="1613886402699" duration="711000" />
+      <workItem from="1613887144389" duration="2000" />
+      <workItem from="1613887164085" duration="752000" />
+      <workItem from="1613888047703" duration="1227000" />
+      <workItem from="1613889348766" duration="9358000" />
+      <workItem from="1614002008007" duration="501000" />
+      <workItem from="1614346700371" duration="1156000" />
+      <workItem from="1614382713171" duration="16883000" />
+      <workItem from="1614467676780" duration="598000" />
+      <workItem from="1614659764907" duration="17176000" />
+      <workItem from="1614729043939" duration="201000" />
+      <workItem from="1614736355805" duration="10115000" />
+      <workItem from="1614901436308" duration="15956000" />
+      <workItem from="1614983616448" duration="18041000" />
+      <workItem from="1615075112963" duration="2316000" />
+      <workItem from="1615600895970" duration="8009000" />
+      <workItem from="1615680687106" duration="124000" />
+      <workItem from="1615729737454" duration="620000" />
+      <workItem from="1615761491276" duration="37791000" />
+      <workItem from="1615851113723" duration="18298000" />
+      <workItem from="1615943244663" duration="13195000" />
+      <workItem from="1616023874368" duration="7955000" />
+      <workItem from="1616132946035" duration="8492000" />
+      <workItem from="1616194490712" duration="6113000" />
+      <workItem from="1616228475635" duration="12964000" />
+      <workItem from="1616284825204" duration="15364000" />
+      <workItem from="1616369531953" duration="4996000" />
+      <workItem from="1616389883696" duration="7900000" />
+      <workItem from="1616476669795" duration="25809000" />
+      <workItem from="1616545034491" duration="5864000" />
+      <workItem from="1616592329082" duration="1200000" />
+      <workItem from="1616632399822" duration="3322000" />
+      <workItem from="1616739238771" duration="18865000" />
+      <workItem from="1616976915600" duration="10002000" />
+      <workItem from="1617063946530" duration="4953000" />
+      <workItem from="1617113412508" duration="2280000" />
+      <workItem from="1617152282458" duration="18825000" />
+      <workItem from="1617282665598" duration="835000" />
+      <workItem from="1617368317367" duration="1179000" />
+      <workItem from="1617435089885" duration="2064000" />
+      <workItem from="1617586420310" duration="2178000" />
+      <workItem from="1617633507460" duration="287000" />
+      <workItem from="1617709980180" duration="1228000" />
+      <workItem from="1617795294351" duration="850000" />
+      <workItem from="1618236296730" duration="1203000" />
+      <workItem from="1618315224076" duration="626000" />
+      <workItem from="1619362442819" duration="476000" />
+      <workItem from="1619442537708" duration="4988000" />
+      <workItem from="1619533137806" duration="378000" />
+      <workItem from="1619533533052" duration="1270000" />
+      <workItem from="1619609733386" duration="1229000" />
+      <workItem from="1619652832446" duration="1413000" />
+      <workItem from="1619705813924" duration="745000" />
+      <workItem from="1619740755365" duration="155000" />
+      <workItem from="1619782828098" duration="642000" />
+      <workItem from="1619784267218" duration="5045000" />
+      <workItem from="1619791596003" duration="25000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/binding/MapperProxy.class</url>
+          <line>40</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.0.RELEASE/spring-context-5.2.0.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class</url>
+          <line>262</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../JAVA/Java/jdk1.8.0_144/src.zip!/java/io/ObjectOutputStream.java</url>
+          <line>1140</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../JAVA/Java/jdk1.8.0_144/src.zip!/java/io/ObjectOutputStream.java</url>
+          <line>1132</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../JAVA/Java/jdk1.8.0_144/src.zip!/java/io/ObjectOutputStream.java</url>
+          <line>1107</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../JAVA/Java/jdk1.8.0_144/src.zip!/java/io/ObjectOutputStream.java</url>
+          <line>1152</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../JAVA/Java/jdk1.8.0_144/src.zip!/java/io/ObjectStreamClass.java</url>
+          <line>976</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../JAVA/Java/jdk1.8.0_144/src.zip!/java/io/ObjectStreamClass.java</url>
+          <line>321</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../JAVA/Java/jdk1.8.0_144/src.zip!/java/io/ObjectStreamClass.java</url>
+          <line>459</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../JAVA/Java/jdk1.8.0_144/src.zip!/java/util/concurrent/ThreadPoolExecutor.java</url>
+          <line>1364</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../JAVA/Java/jdk1.8.0_144/src.zip!/java/util/concurrent/ThreadPoolExecutor.java</url>
+          <line>956</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../JAVA/Java/jdk1.8.0_144/src.zip!/java/util/concurrent/ThreadPoolExecutor.java</url>
+          <line>1048</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zzb/test/BinaryTree.java</url>
+          <line>187</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zzb/test/AVLTreeTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zzb/test/RBTree.java</url>
+          <line>612</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
