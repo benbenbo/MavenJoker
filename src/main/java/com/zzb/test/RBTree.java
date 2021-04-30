@@ -432,10 +432,10 @@ public class RBTree<T extends Comparable<T>> {
     }
 
     /**
-     * 删除结点操作的
+     * 删除结点的修复操作
      * fix remove action
-     * @param node
-     * @param isParent
+     * @param node 修复的结点
+     * @param isParent node是否是被删除结点的父节点 true-是 非true-否
      */
     private void fixRemove(RBTreeNode<T> node,boolean isParent){
         RBTreeNode<T> cur = isParent ? null : node;
