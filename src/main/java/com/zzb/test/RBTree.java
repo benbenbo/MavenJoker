@@ -443,10 +443,12 @@ public class RBTree<T extends Comparable<T>> {
         RBTreeNode<T> parent = isParent ? node : node.getParent();
 
         while(!isRed && !isRoot(cur)){
+            //这里兄弟结点是绝对非空的，因为移除之前，颜色是平衡的。
+            //TODO：这里其实我还不明白为什么兄弟结点是空的。
             RBTreeNode<T> sibling = getSibling(cur,parent);
             //sibling is not null,due to before remove tree color is balance
 
-            //if cur is a left node
+            //isLeft代表当前结点cur是不是parent的左节点
             boolean isLeft = parent.getRight()==sibling;
             if(sibling.isRed() && !isLeft){//case 1
                 //cur in right
@@ -504,7 +506,13 @@ public class RBTree<T extends Comparable<T>> {
         return root.getLeft() == node && node.getParent()==null;
     }
 
-    //get sibling node
+
+    /**
+     * 获取兄弟结点
+     * @param node
+     * @param parent
+     * @return
+     */
     private RBTreeNode<T> getSibling(RBTreeNode<T> node,RBTreeNode<T> parent){
         parent = node==null ? parent : node.getParent();
         if(node==null){
@@ -585,41 +593,13 @@ public class RBTree<T extends Comparable<T>> {
 
 
     public static void main(String[] args) {
-//        RBTree<String> bst = new RBTree<String>();
-//        bst.addNode("d");
-//        bst.addNode("d");
-//        bst.addNode("c");
-//        bst.addNode("c");
-//        bst.addNode("b");
-//        bst.addNode("f");
-//
-//        bst.addNode("a");
-//        bst.addNode("e");
-//
-//        bst.addNode("g");
-//        bst.addNode("h");
-//
-//
-//        bst.printTree(bst.getRoot());
         RBTree<Integer> bst = new RBTree<Integer>();
-        bst.addNode(44);
+        bst.addNode(45);
         bst.addNode(43);
+        bst.addNode(47);
         bst.addNode(42);
-        bst.addNode(41);
-        bst.addNode(40);
-        bst.addNode(39);
-//
-        bst.addNode(38);
-        bst.addNode(37);
-
-//        bst.addNode(36);
-//        bst.addNode(35);
-
         bst.printTree(bst.getRoot());
-
         System.out.println("-------------------------");
-        bst.remove(44);
-        bst.printTree(bst.getRoot());
     }
 
 }
