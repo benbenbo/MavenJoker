@@ -596,10 +596,22 @@ public class RBTree<T extends Comparable<T>> {
         RBTree<Integer> bst = new RBTree<Integer>();
         bst.addNode(45);
         bst.addNode(43);
-        bst.addNode(47);
+        bst.addNode(50);
         bst.addNode(42);
+        bst.addNode(49);
+        bst.addNode(51);
+        bst.addNode(48);
         bst.printTree(bst.getRoot());
+        System.out.println();
         System.out.println("-------------------------");
+        /*bst.remove(48);
+        bst.remove(42);
+        bst.remove(43);
+        bst.printTree(bst.getRoot());
+        System.out.println();
+        System.out.println("-------------------------");*/
+
+
     }
 
 }

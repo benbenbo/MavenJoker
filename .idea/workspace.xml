@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d39f66a-e9f9-4a31-9434-21226445d765" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zzb/test/MyRBTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_27_22_22_[Default_Changelist]/RBTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_27_22_22_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_27_22_22__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/test/RBTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/test/RBTree.java" afterDir="false" />
     </list>
@@ -82,7 +85,7 @@
       <recent name="com.zzb.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RBTree">
+  <component name="RunManager" selected="Application.MyRBTree">
     <configuration name="AVLTreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zzb.test.AVLTreeTest" />
       <module name="MavenJoker" />
@@ -119,6 +122,19 @@
     <configuration name="MethodAreaDeml" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.zzb.test.MethodAreaDeml" />
       <module name="MavenJoker" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyRBTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zzb.test.MyRBTree" />
+      <module name="MavenJoker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zzb.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,28 +183,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UDPSocketTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zzb.test.UDPSocketTest" />
-      <module name="MavenJoker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zzb.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -198,19 +199,19 @@
       <item itemvalue="Application.MethodAreaDeml" />
       <item itemvalue="Application.OOMTest" />
       <item itemvalue="Application.StaticFieldTest" />
-      <item itemvalue="Application.UDPSocketTest" />
       <item itemvalue="Application.RedBlackTest" />
       <item itemvalue="Application.BinaryTreeTest" />
       <item itemvalue="Application.AVLTreeTest" />
       <item itemvalue="Application.RBTree" />
+      <item itemvalue="Application.MyRBTree" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyRBTree" />
         <item itemvalue="Application.RBTree" />
         <item itemvalue="Application.AVLTreeTest" />
         <item itemvalue="Application.BinaryTreeTest" />
         <item itemvalue="Application.RedBlackTest" />
-        <item itemvalue="Application.UDPSocketTest" />
       </list>
     </recent_temporary>
   </component>
@@ -387,7 +388,10 @@
       <workItem from="1619791596003" duration="3157000" />
       <workItem from="1619877026349" duration="2437000" />
       <workItem from="1619916824508" duration="6645000" />
-      <workItem from="1619989912290" duration="3965000" />
+      <workItem from="1619989912290" duration="17798000" />
+      <workItem from="1620094884083" duration="18866000" />
+      <workItem from="1620179159572" duration="14691000" />
+      <workItem from="1620223500150" duration="3620000" />
     </task>
     <task id="LOCAL-00001" summary="修复项目问题">
       <created>1619791800386</created>
@@ -410,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619791987822</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修复项目问题">
+      <created>1620001025420</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620001025420</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,6 +527,26 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/zzb/test/AVLTreeTest.java</url>
           <line>20</line>
           <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zzb/test/RBTree.java</url>
+          <line>608</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zzb/test/MyRBTree.java</url>
+          <line>505</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zzb/test/MyRBTree.java</url>
+          <line>329</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zzb/test/MyRBTree.java</url>
+          <line>545</line>
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
