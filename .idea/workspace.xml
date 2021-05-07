@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d39f66a-e9f9-4a31-9434-21226445d765" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zzb/test/MyRBTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_27_22_22_[Default_Changelist]/RBTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_27_22_22_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_27_22_22__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/test/RBTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/test/RBTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +45,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="userSettingsFile" value="E:\JAVA\apache-maven-3.6.0\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\Java\apache-maven-3.6.0-bin\apache-maven-3.6.0\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -71,7 +66,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -381,6 +376,11 @@
       <workItem from="1620094884083" duration="18866000" />
       <workItem from="1620179159572" duration="14691000" />
       <workItem from="1620223500150" duration="3620000" />
+      <workItem from="1620281347824" duration="30000" />
+      <workItem from="1620281419113" duration="820000" />
+      <workItem from="1620350753597" duration="28000" />
+      <workItem from="1620350984080" duration="299000" />
+      <workItem from="1620351525651" duration="629000" />
     </task>
     <task id="LOCAL-00001" summary="修复项目问题">
       <created>1619791800386</created>
@@ -427,7 +427,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="dev" />
                       </list>
                     </value>
                   </entry>
