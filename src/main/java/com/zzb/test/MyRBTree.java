@@ -341,6 +341,7 @@ public class MyRBTree<T extends Comparable<T>> {
                 if(dataRoot.right!=null){
                     //这里只要是存在right就可以找到它的后继节点，代替真实被删除的节点
                     MyRBTreeNode<T> min = removeMin(dataRoot.right);
+                    //这里min一定是left==null的，但是right==null不确定，要保证拿到被删除节点的sibling，所以要判断
                     MyRBTreeNode<T> x = min.right==null ? min.parent : min.right;
                     boolean isParent = min.right==null;
 
@@ -467,13 +468,16 @@ public class MyRBTree<T extends Comparable<T>> {
 
     /**
      * 移除节点的修复操作
-     * @param node 被删除的节点
-     * @param isParent
+     * @param node 被删除的节点的子节点或父节点
+     * @param isParent true-node是被删除节点的父节点，false-node是被删除节点的子节点
      */
     public void fixRemove(MyRBTreeNode<T> node,boolean isParent){
-        MyRBTreeNode<T> cur=node;
-        while(cur!=root) {
-            MyRBTreeNode<T> parent = node.parent;
+        MyRBTreeNode<T> cur=isParent?null:node;
+        MyRBTreeNode<T> parent=isParent?node:node.parent;
+        boolean isRed=isParent?false:cur.isRed;
+        while(!isRed && cur!=root) {
+            //这里兄弟结点是绝对非空的，因为移除之前，颜色是平衡的。
+            //被删除节点，没有兄弟的话就违反性质5。因为null节点也被视为黑色节点
             MyRBTreeNode<T> sibling = getSibling(node, parent);
             boolean isLeft = sibling == parent.right;
             if (sibling.isRed && !isLeft) {
@@ -529,6 +533,16 @@ public class MyRBTree<T extends Comparable<T>> {
                 parent=cur.parent;
             }
         }
+        //对于仅有一个子节点的黑色节点的处理
+        if(isRed){
+            cur.isRed=false;
+        }
+        //根节点保证为黑色
+        if(root!=null){
+            root.isRed=false;
+            root.parent=null;
+        }
+
     }
 
     public static void main(String[] args) {
@@ -543,7 +557,7 @@ public class MyRBTree<T extends Comparable<T>> {
         bst.printTree();
         System.out.println();
         System.out.println("-------------------------");
-        bst.remove(49);
+        bst.remove(48);
         bst.printTree();
         System.out.println();
         System.out.println("-------------------------");

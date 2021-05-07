@@ -444,9 +444,8 @@ public class RBTree<T extends Comparable<T>> {
 
         while(!isRed && !isRoot(cur)){
             //这里兄弟结点是绝对非空的，因为移除之前，颜色是平衡的。
-            //TODO：这里其实我还不明白为什么兄弟结点是空的。
+            //被删除节点，没有兄弟的话就违反性质5。null节点也被视为黑色节点
             RBTreeNode<T> sibling = getSibling(cur,parent);
-            //sibling is not null,due to before remove tree color is balance
 
             //isLeft代表当前结点cur是不是parent的左节点
             boolean isLeft = parent.getRight()==sibling;
@@ -604,12 +603,14 @@ public class RBTree<T extends Comparable<T>> {
         bst.printTree(bst.getRoot());
         System.out.println();
         System.out.println("-------------------------");
-        /*bst.remove(48);
-        bst.remove(42);
-        bst.remove(43);
+        bst.remove(48);
+//        bst.remove(51);
+//        bst.remove(49);
+        /*bst.remove(42);
+        bst.remove(43);*/
         bst.printTree(bst.getRoot());
         System.out.println();
-        System.out.println("-------------------------");*/
+        System.out.println("-------------------------");
 
 
     }
