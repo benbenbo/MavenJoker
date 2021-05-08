@@ -386,9 +386,11 @@ public class RBTree<T extends Comparable<T>> {
                     //移除的是黑色节点，需要修复操作
                     //这里之所以判断min节点原来的颜色是因为min会继承dataRoot的颜色，真正被删掉的时候min节点
                     if(curMinIsBlack){
+                        //只要想一个问题，传什么节点能够拿到被删除节点的兄弟节点
                         if(min!=dataRoot.getRight()){
                             fixRemove(x,isParent);
                         }else if(min.getRight()!=null){
+                            //这里实际删除的是min节点，因为min继承了dataRoot的颜色，少了的是min的颜色，而且curMinIsBlack也是判断min本来的颜色
                             fixRemove(min.getRight(),false);
                         }else{
                             fixRemove(min,true);
@@ -525,6 +527,10 @@ public class RBTree<T extends Comparable<T>> {
     }
     /**
      * 找到中序遍历下的下一个结点
+     *
+     * 如果node没有子树或者仅有右子树，返回node本身
+     * 否则则返回node最左的子孙节点
+     *
      * @param node 当前结点的右子树
      * @return
      */

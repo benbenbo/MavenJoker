@@ -374,10 +374,12 @@ public class MyRBTree<T extends Comparable<T>> {
                             //是dataRoot的右孩子的孩子，从被删除节点min的右子节点或者父节点开始调整
                             fixRemove(x,isParent);
                         }else if(min.right!=null){
-                            //min是dataRoot的右孩子，而且min的右子树也是非空，从min的右子节点开始调整
+                            //这里可以想成，因为min删除了，原来的min成为dataRoot，min.right成为了min
+                            //因此，要拿到被删节点的父节点->可通过min.right去拿
                             fixRemove(min.right,false);
                         }else{
-                            //叶子节点，从被删除节点min开始调整。
+                            //同上
+                            //因此，要拿到被删节点的父节点->没有min.right->不能通过right拿到父节点->直接传父节点
                             fixRemove(min,true);
                         }
                     }
